@@ -1,0 +1,2 @@
+# Data-Structures-and-Algorithms-Practice-Problems
+These practice problems often involve tasks such as implementing algorithms, manipulating data structures, analyzing time and space complexity, and optimizing code performance. Regular practice not only helps in reinforcing concepts but also enhances problem-solving techniques, algorithmic thinking, and the ability to design efficient solutions. It is an essential step towards mastering data structures and algorithms. I am still practicing and trying to work on my coding skills.

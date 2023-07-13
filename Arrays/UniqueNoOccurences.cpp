@@ -8,7 +8,7 @@ bool isFrequencyUnique(int n, int arr[])
        
             unordered_map<int, int> mpp;
             for(int i=0;i<n;i++){
-                mpp[arr[i]]++;
+                mpp[arr[i]]++; //hi
             }
             set<int> s;
         for(int i=0;i<n;i++)

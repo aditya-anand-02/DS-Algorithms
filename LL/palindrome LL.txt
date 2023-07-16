@@ -1,0 +1,43 @@
+
+class Solution{
+  public:
+  
+Node *reverse(Node *head)
+{
+    if(head==NULL || head->next==NULL)
+    {
+        return head;
+    }
+    Node *prev=NULL;
+    Node *curr=head;
+    while(curr!=NULL)
+    {
+       Node *fwd=curr->next;
+        curr->next=prev;
+        prev=curr;
+        curr=fwd;
+    }
+    return prev;
+}
+    //Function to check whether the list is palindrome.
+    bool isPalindrome(Node *head)
+    {
+        bool flag=true;
+        Node *temp1=head;
+        Node *temp2=reverse(head);
+        while(temp1!=NULL && temp2!=NULL)
+        {
+            if(temp1->data == temp2->data)
+            {
+                temp1=temp1->next;
+                temp2=temp2->next;
+            }
+            else
+            {
+                flag=false;
+            }
+        }
+        return flag;
+        
+    }
+};
